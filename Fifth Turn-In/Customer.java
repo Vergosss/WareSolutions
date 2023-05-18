@@ -1,4 +1,4 @@
-public class Customer extends User{
-    String identifier;
-    String name;
+public class Customer extends User {
+    private String identifier;
+    private String name;
 }
