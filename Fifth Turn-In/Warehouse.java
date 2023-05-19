@@ -19,7 +19,7 @@ public int getWhId() {
     return whId;
 }
 
-public void setWhId(int whId){
+public void setWhId(int whId) {
     this.whId = whId;
 }
 
