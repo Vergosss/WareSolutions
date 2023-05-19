@@ -45,5 +45,18 @@ public void setEmployee(Employee employee) {
     this.employee = employee;
 }
 
+// Method to check product availability
+// Number 6 of Seq Diagram. and Number 6 Use Case.
+
+//public boolean productAvailable(String productName) {
+    //First thought is to use if logic to check product availability.
+    //We will check it later. 
+
+ //   if (products.contains(productName)) {
+   //     return true;
+    //} else {
+     //   return false;
+    //}
+//}
 
 }
