@@ -34,4 +34,11 @@ public class Profile {
     public void setLocation(String location) {
         this.location = location;
     }
+
+    // Method to show the profile
+    public void showProfile() {
+        System.out.println("Customer Name: " + customerName);
+        System.out.println("Password: " + password);
+        System.out.println("Location: " + location);
+    }
 }
