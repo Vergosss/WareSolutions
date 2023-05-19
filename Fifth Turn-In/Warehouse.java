@@ -1,11 +1,13 @@
 public class Warehouse {
+    private int whId;
     private String country;
     private String employees;
     private String products;
     private Employee employee;
 
 // Constructor
-public Warehouse(String country, String employees, String products, Employee employee) {
+public Warehouse(int whId, String country, String employees, String products, Employee employee) {
+    this.whId = whId;
     this.country = country;
     this.employees = employees;
     this.products = products;
@@ -13,6 +15,14 @@ public Warehouse(String country, String employees, String products, Employee emp
 }
 
 // Start of : Getters and Setters for the Warehouse Class.
+public int getWhId() {
+    return whId;
+}
+
+public void setWhId(int whId){
+    this.whId = whId;
+}
+
 public String getCountry() {
     return country;
 }
