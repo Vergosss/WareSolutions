@@ -43,4 +43,18 @@ public Warehouse getWarehouse() {
 public void setWarehouse(Warehouse warehouse) {
     this.warehouse = warehouse;
 }
+//end of getters and setters.
+//
+//Begin of Methods:
+
+//Method to check the budget Viability.
+//The method compares the 'income' and 'expenses' attributes and 
+//returns true if the income is greater than the expenses (We have Viability).
+
+public boolean checkBudgetViability() { 
+    return (income > expenses);
+}
+
+
+
 }
