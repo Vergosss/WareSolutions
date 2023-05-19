@@ -36,4 +36,12 @@ public boolean isViability() {
 public void setViability(boolean viability) {
     this.viability = viability;
 }
+
+public Warehouse getWarehouse() {
+    return warehouse;
+}
+
+public void setWarehouse(Warehouse warehouse) {
+
+}
 }
