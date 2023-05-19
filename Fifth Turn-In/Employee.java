@@ -36,7 +36,6 @@ public class Employee {
     }
 
     // Method to show the employee's profile
-    //maybe we need to change to -> showProfile ? 
     public void showEmployee() {
         System.out.println("Identifier: " + identifier);
         System.out.println("Name: " + name);
