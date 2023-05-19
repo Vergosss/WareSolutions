@@ -28,4 +28,11 @@ public float getExpenses() {
 public void setExpenses(Float expenses) {
     this.expenses = expenses;
 }
+public boolean isViability() {
+    return viability;
+}
+
+public void setViability(boolean viability) {
+    this.viability = viability;
+}
 }
