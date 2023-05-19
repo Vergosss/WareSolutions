@@ -45,9 +45,9 @@ public void setWarehouse(Warehouse warehouse) {
 }
 //end of getters and setters.
 //
-//Begin of Methods:
+//Begin of Methods:  
 
-//Method to check the budget Viability.
+//Method to check the budget Viability. Use Case: Number 10.
 //The method compares the 'income' and 'expenses' attributes and 
 //returns true if the income is greater than the expenses (We have Viability).
 
@@ -55,6 +55,19 @@ public boolean checkBudgetViability() {
     return (income > expenses);
 }
 
+//Method to calculate sales: Use Case: Number 13
+public float calculateSales() {
+    //code..
+
+    return 0.0f;
+}
+
+//Method to calculate revenue (=income ? ): Use Case: Number 13
+public float calculateSales() {
+    //code..
+
+    return 0.0f;
+}
 
 
 }
