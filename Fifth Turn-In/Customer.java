@@ -1,25 +1,29 @@
 public class Customer extends User {
-    private String identifier;
-    private String name;
+   private String identifier;
+   private String name;
 
+
+//Constructor    
 public Customer(String identifier, String name) {
-this.identifier = identifier;
-this.name = name;
+   this.identifier = identifier;
+   this.name = name;
 }
- public String getIdentifier(){
 
-    return this.identifier;
- }   //
- public String getName(){
-    return this.name;
+//Getters and Setters
+public String getIdentifier(){
+   return this.identifier;
+}   
 
- }
- public void setIdentifier(String identifier){
-    this.identifier = identifier;
- }
- public void setName(String name){
-    this.name = name;
- }
-
- 
+public String getName(){
+   return this.name;
 }
+
+public void setIdentifier(String identifier){
+   this.identifier = identifier;
+}
+
+public void setName(String name){
+   this.name = name;
+}
+
+ }
