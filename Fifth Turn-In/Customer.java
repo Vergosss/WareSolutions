@@ -9,7 +9,7 @@ this.name = name;
  public String getIdentifier(){
 
     return this.identifier;
- }   
+ }   //
  public String getName(){
     return this.name;
 
