@@ -1,10 +1,10 @@
 public class StorageLocation {
-    private String warehouse;
+    private Warehouse warehouse;
     private int aisle;
     private int shelf;
 
     // Contructor 
-    public StorageLocation(String warehouse, int aisle, int shelf) {
+    public StorageLocation(Warehouse warehouse, int aisle, int shelf) {
         this.warehouse = warehouse;
         this.aisle = aisle;
         this.shelf = shelf;
@@ -21,11 +21,11 @@ public class StorageLocation {
 
     }
 
-    public String getWarehouse() {
+    public Warehouse getWarehouse() {
         return warehouse;
     }
     
-    public void setWarehouse(String warehouse) {
+    public void setWarehouse(Warehouse warehouse) {
         this.warehouse = warehouse;
     }
 
