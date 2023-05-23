@@ -37,4 +37,9 @@ public class StorageLocation {
         this.shelf = shelf;
 
     }
+
+    // Use Case Number: 8 
+    //First method: checkProductLocation() = It checks the location of a product inside the WH.
+
+
 }
