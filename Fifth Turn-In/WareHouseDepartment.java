@@ -1,3 +1,3 @@
-public class WarehouseDepartment extends User {
+public class WareHouseDepartment extends User {
     
 }

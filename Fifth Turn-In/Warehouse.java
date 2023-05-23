@@ -1,72 +1,72 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Warehouse {
     private int whId;
     private String country;
-    private String employees;
-    private String products;
-    private Employee employee;
+    private List<Employee> employees = new ArrayList<>();    
+    private List<Product> products = new ArrayList<>();
+    
+    // Constructor
+    public Warehouse(int whId, String country, List<Employee> employees, List<Product> products) {
+        this.whId = whId;
+        this.country = country;
+        this.employees = employees;
+        this.products = products;
+        
+    }
 
-// Constructor
-public Warehouse(int whId, String country, String employees, String products, Employee employee) {
-    this.whId = whId;
-    this.country = country;
-    this.employees = employees;
-    this.products = products;
-    this.employee = employee;
-}
+    // Start of : Getters and Setters for the Warehouse Class.
+    public int getWhId() {
+        return whId;
+    }
 
-// Start of : Getters and Setters for the Warehouse Class.
-public int getWhId() {
-    return whId;
-}
+    public void setWhId(int whId) {
+        this.whId = whId;
+    }
 
-public void setWhId(int whId) {
-    this.whId = whId;
-}
+    public String getCountry() {
+        return country;
+    }
 
-public String getCountry() {
-    return country;
-}
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
-public void setCountry(String country) {
-    this.country = country;
-}
+    public List<Employee> getEmployees() {
+        return employees;
+    }
 
-public String getEmployees() {
-    return employees;
-}
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
+    }
 
-public void setEmployees(String employees) {
-    this.employees = employees;
-}
+    public List<Product> getProducts() {
+        return this.products;
+    }
 
-public String getProducts() {
-    return products;
-}
+    /*
+     * public void setProducts(String products) {
+     * this.products = products;
+     * }
+     */
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
 
-public void setProducts(String products) {
-    this.products = products;
-}
+ 
+    // Method to check product availability
+    // Number 6 of Seq Diagram. and Number 6 Use Case.
 
-public Employee getEmployee() {
-    return employee;
-}
+    // public boolean productAvailable(String productName) {
+    // First thought is to use if logic to check product availability.
+    // We will check it later.
 
-public void setEmployee(Employee employee) {
-    this.employee = employee;
-}
-
-// Method to check product availability
-// Number 6 of Seq Diagram. and Number 6 Use Case.
-
-//public boolean productAvailable(String productName) {
-    //First thought is to use if logic to check product availability.
-    //We will check it later. 
-
- //   if (products.contains(productName)) {
-   //     return true;
-    //} else {
-     //   return false;
-    //}
-//}
+    // if (products.contains(productName)) {
+    // return true;
+    // } else {
+    // return false;
+    // }
+    // }
 
 }
