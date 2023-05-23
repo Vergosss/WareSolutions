@@ -1,4 +1,5 @@
 public class Employee {
+    //Class attributes
     private String identifier;
     private String name;
     private String department;

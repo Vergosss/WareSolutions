@@ -1,4 +1,5 @@
 public class StorageLocation {
+    //Class attributes
     private Warehouse warehouse;
     private int aisle;
     private int shelf;

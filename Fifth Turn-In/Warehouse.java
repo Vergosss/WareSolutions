@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Warehouse {
+    //Class attributes
     private int whId;
     private String country;
     private List<Employee> employees = new ArrayList<>();    

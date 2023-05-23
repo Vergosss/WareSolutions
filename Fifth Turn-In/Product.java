@@ -1,4 +1,5 @@
 public class Product {
+    //Class attributes
     private String identifier;
     private String name;
     private String description;
@@ -14,7 +15,7 @@ public Product(String identifier, String name, String description, String catego
 
 // Getters and Setters
 public String getIdentifier() {
-    return identifier;
+    return this.identifier;
 }
 
 public void setIdentifier(String identifier) {
@@ -22,7 +23,7 @@ public void setIdentifier(String identifier) {
 }
 
 public String getName() {
-    return name;
+    return this.name;
 }
 
 public void setName(String name) {
@@ -30,7 +31,7 @@ public void setName(String name) {
 }
 
 public String getDescription() {
-    return description;
+    return this.description;
 }
 
 public void setDescription(String description) {

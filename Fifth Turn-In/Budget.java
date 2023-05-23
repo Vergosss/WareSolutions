@@ -1,75 +1,76 @@
 public class Budget {
+    // Class attributes
     private float income;
     private float expenses;
     private boolean viability;
     private Warehouse warehouse;
 
-// Constructor
+    // Constructor
 
-public Budget(float income, float expenses, boolean viability, Warehouse warehouse){
-    this.income = income;    
-    this.expenses = expenses;
-    this.viability = viability;
-    this.warehouse = warehouse;
-}
+    public Budget(float income, float expenses, boolean viability, Warehouse warehouse) {
+        this.income = income;
+        this.expenses = expenses;
+        this.viability = viability;
+        this.warehouse = warehouse;
+    }
 
-//The beginning of getters / setters:
-public float getIncome() {
-    return income;
-}
+    // The beginning of getters / setters:
+    public float getIncome() {
+        return income;
+    }
 
-public void setIncome(float income) {
-    this.income = income;
-}
+    public void setIncome(float income) {
+        this.income = income;
+    }
 
-public float getExpenses() {
-    return expenses;
-}
+    public float getExpenses() {
+        return expenses;
+    }
 
-public void setExpenses(Float expenses) {
-    this.expenses = expenses;
-}
-public boolean isViability() {
-    return viability;
-}
+    public void setExpenses(Float expenses) {
+        this.expenses = expenses;
+    }
 
-public void setViability(boolean viability) {
-    this.viability = viability;
-}
+    public boolean isViability() {
+        return viability;
+    }
 
-public Warehouse getWarehouse() {
-    return warehouse;
-}
+    public void setViability(boolean viability) {
+        this.viability = viability;
+    }
 
-public void setWarehouse(Warehouse warehouse) {
-    this.warehouse = warehouse;
-}
+    public Warehouse getWarehouse() {
+        return warehouse;
+    }
 
-//end of getters and setters.
-//
-//Begin of Methods:  
+    public void setWarehouse(Warehouse warehouse) {
+        this.warehouse = warehouse;
+    }
 
-//Method to check the budget Viability. Use Case: Number 10.
-//The method compares the 'income' and 'expenses' attributes and 
-//returns true if the income is greater than the expenses (We have Viability).
+    // end of getters and setters.
+    //
+    // Begin of Methods:
 
-public boolean checkBudgetViability() { 
-    return (income > expenses);
-}
+    // Method to check the budget Viability. Use Case: Number 10.
+    // The method compares the 'income' and 'expenses' attributes and
+    // returns true if the income is greater than the expenses (We have Viability).
 
-//Method to calculate sales: Use Case: Number 13
-public float calculateSales() {
-    //code..
+    public boolean checkBudgetViability() {
+        return (income > expenses);
+    }
 
-    return 0.0f;
-}
+    // Method to calculate sales: Use Case: Number 13
+    public float calculateSales() {
+        // code..
 
-//Method to calculate revenue (=income ? ): Use Case: Number 13
-public float calculateRevenue() {
-    //code..
+        return 0.0f;
+    }
 
-    return 0.0f;
-}
+    // Method to calculate revenue (=income ? ): Use Case: Number 13
+    public float calculateRevenue() {
+        // code..
 
+        return 0.0f;
+    }
 
 }

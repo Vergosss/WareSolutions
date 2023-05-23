@@ -1,4 +1,5 @@
 public class Profile {
+    //Class attributes
     private String customerName;
     private String password;
     private String location;
