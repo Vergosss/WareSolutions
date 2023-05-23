@@ -65,7 +65,7 @@ public float calculateSales() {
 }
 
 //Method to calculate revenue (=income ? ): Use Case: Number 13
-public float calculateSales() {
+public float calculateRevenue() {
     //code..
 
     return 0.0f;
