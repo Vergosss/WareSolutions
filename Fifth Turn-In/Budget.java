@@ -3,15 +3,15 @@ public class Budget {
     private float income;
     private float expenses;
     private boolean viability;
-    private Warehouse warehouse;
+    
 
     // Constructor
 
-    public Budget(float income, float expenses, boolean viability, Warehouse warehouse) {
+    public Budget(float income, float expenses, boolean viability) {
         this.income = income;
         this.expenses = expenses;
         this.viability = viability;
-        this.warehouse = warehouse;
+        
     }
 
     // The beginning of getters / setters:
@@ -32,20 +32,16 @@ public class Budget {
     }
 
     public boolean isViability() {
-        return viability;
+        return this.viability;
     }
 
     public void setViability(boolean viability) {
         this.viability = viability;
     }
 
-    public Warehouse getWarehouse() {
-        return warehouse;
-    }
+  
 
-    public void setWarehouse(Warehouse warehouse) {
-        this.warehouse = warehouse;
-    }
+   
 
     // end of getters and setters.
     //
