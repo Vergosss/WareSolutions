@@ -16,7 +16,7 @@ public class Budget {
 
     // The beginning of getters / setters:
     public float getIncome() {
-        return income;
+        return this.income;
     }
 
     public void setIncome(float income) {
@@ -24,7 +24,7 @@ public class Budget {
     }
 
     public float getExpenses() {
-        return expenses;
+        return this.expenses;
     }
 
     public void setExpenses(Float expenses) {
@@ -52,7 +52,7 @@ public class Budget {
     // returns true if the income is greater than the expenses (We have Viability).
 
     public boolean checkBudgetViability() {
-        return (income > expenses);
+        return (this.income > this.expenses);
     }
 
     // Method to calculate sales: Use Case: Number 13
