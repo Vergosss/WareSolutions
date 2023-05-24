@@ -13,7 +13,7 @@ public class Profile {
 
     // Getters and Setters For EditProfile Use Case
     public String getCustomerName() {
-        return customerName;
+        return this.customerName;
     }
 
     public void setCustomerName(String customerName) {
@@ -21,7 +21,7 @@ public class Profile {
     }
 
     public String getPassword() {
-        return password;
+        return this.password;
     }
 
     public void setPassword(String password) {
@@ -29,7 +29,7 @@ public class Profile {
     }
 
     public String getLocation() {
-        return location;
+        return this.location;
     }
 
     public void setLocation(String location) {
@@ -38,8 +38,8 @@ public class Profile {
 
     // Method to show the profile
     public void showProfile() {
-        System.out.println("Customer Name: " + customerName);
-        System.out.println("Password: " + password);
-        System.out.println("Location: " + location);
+        System.out.println("Customer Name: " + getCustomerName());
+        System.out.println("Password: " + getPassword());
+        System.out.println("Location: " + getLocation());
     }
 }
