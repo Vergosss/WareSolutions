@@ -1,5 +1,5 @@
 public class Employee {
-    //Class attributes
+    // Class attributes
     private String identifier;
     private String name;
     private String department;
@@ -13,7 +13,7 @@ public class Employee {
 
     // Getters and Setters
     public String getIdentifier() {
-        return identifier;
+        return this.identifier;
     }
 
     public void setIdentifier(String identifier) {
@@ -21,7 +21,7 @@ public class Employee {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -29,17 +29,17 @@ public class Employee {
     }
 
     public String getDepartment() {
-        return department;
+        return this.department;
     }
 
     public void setDepartment(String department) {
         this.department = department;
     }
 
-    // Method to show the employee's profile
+    // Method to show the employee's info
     public void showEmployee() {
-        System.out.println("Identifier: " + identifier);
-        System.out.println("Name: " + name);
-        System.out.println("Department: " + department);
+        System.out.println("Identifier: " + getIdentifier());
+        System.out.println("Name: " + getName());
+        System.out.println("Department: " + getDepartment());
     }
 }
