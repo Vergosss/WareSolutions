@@ -39,7 +39,7 @@ public void setDescription(String description) {
 }
 
 public String getCategory() {
-    return category;
+    return this.category;
 }
 
 public void setCategory(String category) {

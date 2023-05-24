@@ -23,7 +23,7 @@ public class StorageLocation {
     }
 
     public Warehouse getWarehouse() {
-        return warehouse;
+        return this.warehouse;
     }
     
     public void setWarehouse(Warehouse warehouse) {
