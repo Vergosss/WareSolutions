@@ -1,4 +1,4 @@
-{
+{//
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "c:\\Users\\Vergosss\\Desktop\\openjfx-17.0.6_windows-x64_bin-sdk\\javafx-sdk-17.0.6\\lib\\javafx.base.jar",
