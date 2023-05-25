@@ -13,7 +13,7 @@ public class Main extends Application {
         stg = primaryStage;
         primaryStage.setResizable(true);
         Parent root = FXMLLoader.load(getClass().getResource("LoginForm.fxml"));
-        primaryStage.setTitle("Falcon");
+        primaryStage.setTitle("WareSolutions");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
