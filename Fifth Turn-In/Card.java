@@ -16,6 +16,14 @@ public class Card{
         this.expiration_date=expiration_date;
     }
 
+    //Getters and Setters for Cardholders name
 
+    public String getName(){
+        return this.name;
+    }
+    
+    public void setName(String name){
+        this.name=name;
+    }
 
 }
