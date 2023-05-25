@@ -26,4 +26,14 @@ public class Card{
         this.name=name;
     }
 
+     //Getters and Setters for Expiration_date
+
+     public LocalDate get_Expiration_Date(){
+        return this.expiration_date;
+    }
+
+    public void set_Expiration_date(LocalDate expiration_date){
+        this.expiration_date=expiration_date;
+    }
+
 }
