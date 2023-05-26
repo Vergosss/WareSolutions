@@ -7,5 +7,15 @@ public class Order {
     private String customer;
     private float payment;
 
-    
+   
+     // Constructor
+
+     public Order(Date Date, String identifier, String customer, float payment) {
+        this.Date = Date;
+        this.identifier = identifier;
+        this.customer = customer;
+        this.payment = payment;
+
+    }
+
 }
