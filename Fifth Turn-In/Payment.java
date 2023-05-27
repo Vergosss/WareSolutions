@@ -25,5 +25,13 @@ public class Payment {
         this.identifier = identifier;
     }
 
-    
+    //getters and setters for payment_method
+
+    public String getpaymentmethod() {
+        return this.payment_method;
+    }
+
+    public void setpaymentmethod(String payment_method) {
+        this.payment_method = payment_method;
+    }
 }
