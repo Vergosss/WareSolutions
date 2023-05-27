@@ -1,12 +1,13 @@
+import java.util.*;
+
 public class ShoppingCart {
     // Class attributes
-    private String products;
-    
+    private List<Product> products = new ArrayList<>();
 
-     // Constructor
+    // Constructor
 
-     public ShoppingCart(String products) {
+    public ShoppingCart(List<Product> products) {
         this.products = products;
     }
-    
+
 }
