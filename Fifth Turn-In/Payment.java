@@ -15,5 +15,13 @@ public class Payment {
         
     }
 
+    //getters and setters for identifier attribute 
 
+    public String getidentifier() {
+        return this.identifier;
+    }
+ 
+    public void setidentifier(String identifier) {
+        this.identifier = identifier;
+    }
 }
