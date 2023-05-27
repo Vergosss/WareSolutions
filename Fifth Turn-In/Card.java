@@ -51,5 +51,13 @@ public class Card{
     }
 
     
+    //Getters and Setters for CVC 
 
+    public int getCVC(){
+        return this.cvc;
+    }
+    
+    public void setCVC(int cvc){
+        this.cvc=cvc;
+    }
 }
