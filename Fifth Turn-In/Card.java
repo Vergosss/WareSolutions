@@ -46,8 +46,10 @@ public class Card{
         return this.card_number;
     }
     
-    public void setNam(int card_number){
+    public void setCardNumber(int card_number){
         this.card_number=card_number;
     }
+
+    
 
 }
