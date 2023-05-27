@@ -14,4 +14,32 @@ public class OrderProgress {
         RETURNED,
         COMPLETED
     }
+
+    // Constructor: 
+    public OrderProgress(int orderId, String destination, Status status) {
+        this.orderId = orderId;
+        this.destination = destination;
+        this.status = status;
+    }
+
+    //Getters and Setters: 
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
 }
