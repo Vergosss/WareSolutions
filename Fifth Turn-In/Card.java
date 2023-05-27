@@ -40,6 +40,14 @@ public class Card{
         this.expiration_date=expiration_date;
     }
 
+    //Getters and Setters for Card Number 
+
+    public int getCardNumber(){
+        return this.card_number;
+    }
     
+    public void setNam(int card_number){
+        this.card_number=card_number;
+    }
 
 }
