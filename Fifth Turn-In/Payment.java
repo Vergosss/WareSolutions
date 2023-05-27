@@ -4,14 +4,14 @@ import java.time.LocalDate;
 public class Payment {
     private String identifier;
     private LocalDate payment_date;
-    private String method;
+    private String payment_method;
 
     // Constructor
 
-    public Payment(String identifier, String method) {
+    public Payment(String identifier, String payment_method) {
         this.identifier = identifier;
         this.payment_date = LocalDate.now();
-        this.method = method;
+        this.payment_method = payment_method;
         
     }
 
@@ -24,4 +24,6 @@ public class Payment {
     public void setidentifier(String identifier) {
         this.identifier = identifier;
     }
+
+    
 }
