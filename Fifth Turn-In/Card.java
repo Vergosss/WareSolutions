@@ -8,12 +8,16 @@ public class Card{
     private int month;
     private int day;
     LocalDate expiration_date = LocalDate.of(year,month,day);
+    private int card_number;
+    private int cvc;
 
     //Constructor
 
-    public Card(String name,LocalDate expiration_date){
+    public Card(String name,LocalDate expiration_date,int card_number, int cvc){
         this.name=name;
         this.expiration_date=expiration_date;
+        this.card_number=card_number;
+        this.cvc=cvc;
     }
 
     //Getters and Setters for Cardholders name
@@ -35,5 +39,7 @@ public class Card{
     public void set_Expiration_date(LocalDate expiration_date){
         this.expiration_date=expiration_date;
     }
+
+    
 
 }
