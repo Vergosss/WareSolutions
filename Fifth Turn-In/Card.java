@@ -1,63 +1,57 @@
-import java.time.LocalDate;
-public class Card{
+public class Card {
 
     // Class attributes
-    private String name;
-    
-    private int year;
-    private int month;
-    private int day;
-    LocalDate expiration_date = LocalDate.of(year,month,day);
-    private int card_number;
+    private String holderName;
+    private Date expirationDate;
+    private int cardNumber;
     private int cvc;
 
-    //Constructor
+    // Constructor
 
-    public Card(String name,LocalDate expiration_date,int card_number, int cvc){
-        this.name=name;
-        this.expiration_date=expiration_date;
-        this.card_number=card_number;
-        this.cvc=cvc;
+    public Card(String holderName, Date expirationDate, int cardNumber, int cvc) {
+        this.holderName = holderName;
+        this.expirationDate = expirationDate;
+        this.cardNumber = cardNumber;
+        this.cvc = cvc;
     }
 
-    //Getters and Setters for Cardholders name
+    // Getters and Setters for Cardholders name
 
-    public String getName(){
-        return this.name;
-    }
-    
-    public void setName(String name){
-        this.name=name;
+    public String getHolderName() {
+        return this.holderName;
     }
 
-     //Getters and Setters for Expiration_date
-
-     public LocalDate getExpirationDate(){
-        return this.expiration_date;
+    public void setHolderName(String holderName) {
+        this.holderName = holderName;
     }
 
-    public void setExpirationDate(LocalDate expiration_date){
-        this.expiration_date=expiration_date;
+    // Getters and Setters for Expiration_date
+
+    public Date getExpirationDate() {
+        return this.expirationDate;
     }
 
-    //Getters and Setters for Card Number 
-
-    public int getCardNumber(){
-        return this.card_number;
-    }
-    
-    public void setCardNumber(int card_number){
-        this.card_number=card_number;
+    public void setExpirationDate(Date expirationDate) {
+        this.expirationDate = expirationDate;
     }
 
-    
-    //Getters and Setters for CVC 
+    // Getters and Setters for Card Number
 
-    public int getCVC(){
+    public int getCardNumber() {
+        return this.cardNumber;
+    }
+
+    public void setCardNumber(int cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    // Getters and Setters for CVC
+
+    public int getCVC() {
         return this.cvc;
     }
-    
-    public void setCVC(int cvc){
-        this.cvc=cvc;
+
+    public void setCVC(int cvc) {
+        this.cvc = cvc;
     }
 }
