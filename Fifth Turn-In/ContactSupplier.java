@@ -19,4 +19,14 @@ public class ContactSupplier {
     public void setDate(Date date){
         this.date=date;
     }
+
+    //getter/setter for supplier
+
+    public String getSupplier(){
+        return this.supplier;
+    }
+
+    public void setSupplier(String supplier){
+        this.supplier=supplier;
+    }
 }
