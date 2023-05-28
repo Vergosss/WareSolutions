@@ -37,7 +37,7 @@ public class Order {
     }
 
 
-    public Customer geCcustomer() {
+    public Customer getCustomer() {
         return this.customer;
     }
 
@@ -56,5 +56,14 @@ public class Order {
 
      // end of getters and setters.
     //
+
+    // Begin of Methods:
+
+    public void serveOrder(Date Date, String identifier, String customer, float payment)
+    {
+       System.out.println("The order that was created at" + Date + "with id" + identifier + "for the customer" + customer + "and the payment method is" + payment + "is ready to be served.");
+
+    }
+
 
 }

@@ -16,29 +16,29 @@ public class Date {
 }
 
  // The beginning of getters / setters:
- public int getday() {
+ public int getDay() {
     return this.day;
 }
 
-public void setday(int day) {
+public void setDay(int day) {
     this.day = day;
 }
 
 
-public int getmonth() {
+public int getMonth() {
     return this.month;
 }
 
-public void setmonth(int month) {
+public void setMonth(int month) {
     this.month = month;
 }
 
 
-public int getyear() {
+public int getYear() {
     return this.year;
 }
 
-public void setyear(int year) {
+public void setYear(int year) {
     this.year = year;
 }
 

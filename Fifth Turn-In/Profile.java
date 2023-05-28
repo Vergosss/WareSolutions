@@ -4,11 +4,16 @@ public class Profile {
     private String password;
     private String location;
 
+    //assosiation 
+    private Employee employee;
+
+
     // Constructor
-    public Profile(String customerName, String password, String location) {
+    public Profile(String customerName, String password, String location, Employee employee) {
         this.customerName = customerName;
         this.password = password;
         this.location = location;
+        this.employee = employee; 
     }
 
     // Getters and Setters For EditProfile Use Case
@@ -35,6 +40,16 @@ public class Profile {
     public void setLocation(String location) {
         this.location = location;
     }
+
+    public Employee getEmployee() {
+        return this.employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
+
 
     // Method to show the profile
     public void showProfile() {
