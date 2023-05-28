@@ -9,6 +9,16 @@ public class Supplier {
         this.brand = brand;
      }
 
+     //getter and setter for identifier attribute
+
+     public String getIdentifier(){
+        return this.identifier;
+     }
+
+     public void setIdentifier(String identifier){
+        this.identifier=identifier;
+     }
+
      
 
 }
