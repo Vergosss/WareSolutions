@@ -43,10 +43,10 @@ public class StorageLocation {
     //First method: checkProductLocation() = It checks the location of a product inside the WH.
 
 
-    //Second Method: changeProductLocation(product) = It changes the location of the product (aisle and shelf).
+    //Second Method: changeProductLocation(Product product) = It changes the location of the product (aisle and shelf).
 
 
-    //Third Method: deleteLocation(product).
+    //Third Method: deleteLocation(Product product).
 
 
 }
