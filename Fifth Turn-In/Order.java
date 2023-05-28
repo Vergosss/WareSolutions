@@ -59,7 +59,7 @@ public class Order {
 
     // Begin of Methods:
 
-    public void serveorder(Date Date, String identifier, String customer, float payment)
+    public void serveOrder(Date Date, String identifier, String customer, float payment)
     {
        System.out.println("The order that was created at" + Date + "with id" + identifier + "for the customer" + customer + "and the payment method is" + payment + "is ready to be served.");
 
