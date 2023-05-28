@@ -46,4 +46,8 @@ public void setCategory(String category) {
     this.category = category;
 }
 
+// method: productExists(quantity: int)
+// quantity will exist in our database 
+
+
 }
