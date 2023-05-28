@@ -49,10 +49,10 @@ public class Payment {
     //getters and setters for payment_date
     
     public LocalDate getpaymentdate() {
-        return this.payment_date;
+        return this.date;
     }
 
     public void setpaymentdate() {
-        this.payment_date = LocalDate.now();
+        this.date = LocalDate.now();
     }
 }
