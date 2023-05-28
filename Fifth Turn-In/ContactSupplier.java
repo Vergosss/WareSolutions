@@ -29,4 +29,15 @@ public class ContactSupplier {
     public void setSupplier(String supplier){
         this.supplier=supplier;
     }
+
+    // getter/setter for topic attribute 
+
+    public String getTopic(){
+        return this.topic;
+    }
+
+    public void setTopic(String topic){
+        this.topic=topic;
+    }
+
 }
