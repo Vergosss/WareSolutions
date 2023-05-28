@@ -34,4 +34,14 @@ public class Payment {
     public void setpaymentmethod(String payment_method) {
         this.payment_method = payment_method;
     }
+
+    //getters and setters for payment_date
+    
+    public LocalDate getpaymentdate() {
+        return this.payment_date;
+    }
+
+    public void setpaymentdate() {
+        this.payment_date = LocalDate.now();
+    }
 }
