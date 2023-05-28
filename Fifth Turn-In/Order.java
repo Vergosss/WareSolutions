@@ -4,13 +4,13 @@ public class Order {
     // Class attributes
     private Date Date;
     private String identifier;
-    private String customer;
-    private float payment;
+    private Customer customer;
+    private Payment payment;
 
    
      // Constructor
 
-     public Order(Date Date, String identifier, String customer, float payment) {
+     public Order(Date Date, String identifier, Customer customer, Payment payment) {
         this.Date = Date;
         this.identifier = identifier;
         this.customer = customer;
@@ -28,29 +28,29 @@ public class Order {
     }
 
 
-    public String getidentifier() {
+    public String getIdentifier() {
         return this.identifier;
     }
 
-    public void setidentifier(String identifier) {
+    public void setIdentifier(String identifier) {
         this.identifier = identifier;
     }
 
 
-    public String getcustomer() {
+    public Customer geCcustomer() {
         return this.customer;
     }
 
-    public void setcustomer(String customer) {
+    public void setCustomer(Customer customer) {
         this.customer = customer;
     }
 
 
-    public float getpayment() {
+    public Payment getPayment() {
         return this.payment;
     }
 
-    public void setpayment(float payment) {
+    public void setPayment(Payment payment) {
         this.payment = payment;
     }
 
