@@ -11,4 +11,12 @@ public class ContactSupplier {
         this.topic=topic;
     }
 
+    // getter/setter for date attribute 
+    public Date getDate(){
+        return this.date;
+    }
+
+    public void setDate(Date date){
+        this.date=date;
+    }
 }
