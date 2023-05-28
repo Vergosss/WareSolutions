@@ -37,7 +37,7 @@ public class Order {
     }
 
 
-    public Customer geCcustomer() {
+    public Customer getCustomer() {
         return this.customer;
     }
 
