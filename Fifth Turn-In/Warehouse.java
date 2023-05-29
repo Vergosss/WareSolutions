@@ -69,5 +69,16 @@ public class Warehouse {
     // return false;
     // }
     // }
+    //number 9 of sequence diagram and number 9 Use Case
+    public void createWareHouse(){
 
+    }
+    //number 15 of sequence diagram and number 15 Use Case
+    public void addWorker(Employee employee){
+
+    }
+    //number 5 of sequence diagram and number 5 Use Case
+    public void changeWareHousePriority(){
+
+    }
 }
