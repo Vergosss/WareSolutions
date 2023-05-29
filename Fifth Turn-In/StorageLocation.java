@@ -41,12 +41,20 @@ public class StorageLocation {
 
     // Use Case Number: 8 
     //First method: checkProductLocation() = It checks the location of a product inside the WH.
+    public void checkProductLocation(){
 
+    }
 
     //Second Method: changeProductLocation(Product product) = It changes the location of the product (aisle and shelf).
+    public void changeProductLocation(Product product){
 
+    }
 
     //Third Method: deleteLocation(Product product).
+    public void deleteLocation(Product product){
 
-
+    }
+    public void informUserAboutOptimalLocation(){
+        
+    }
 }
