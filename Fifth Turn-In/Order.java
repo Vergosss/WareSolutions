@@ -7,7 +7,6 @@ public class Order {
     private Customer customer;
     private Payment payment;
 
-   
      // Constructor
 
      public Order(Date Date, String identifier, Customer customer, Payment payment) {
@@ -15,10 +14,9 @@ public class Order {
         this.identifier = identifier;
         this.customer = customer;
         this.payment = payment;
-
     }
 
-    // The beginning of getters / setters 
+    // Getter-Setters
     public Date getDate() {
         return this.Date;
     }
@@ -26,7 +24,6 @@ public class Order {
     public void setDate(Date Date) {
         this.Date = Date;
     }
-
 
     public String getIdentifier() {
         return this.identifier;
@@ -36,7 +33,6 @@ public class Order {
         this.identifier = identifier;
     }
 
-
     public Customer getCustomer() {
         return this.customer;
     }
@@ -44,7 +40,6 @@ public class Order {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-
 
     public Payment getPayment() {
         return this.payment;
@@ -54,15 +49,11 @@ public class Order {
         this.payment = payment;
     }
 
-     // end of getters and setters.
-    //
-
     // Begin of Methods:
 
     public void serveOrder(Date Date, String identifier, String customer, float payment)
     {
        System.out.println("The order that was created at" + Date + "with id" + identifier + "for the customer" + customer + "and the payment method is" + payment + "is ready to be served.");
-
     }
 
 
