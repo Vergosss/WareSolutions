@@ -4,17 +4,22 @@ import java.time.LocalDate;
 public class Payment {
     private String identifier;
     private LocalDate date;
-    private String method;
+    private PaymentMethod method;
     private float amount;
     private Order order;
 
+    public enum PaymentMethod {
+        CREDIT_CARD, //paypal would be a good 3rd choice.
+        CASH
+    }
+
     // Constructor
-    public Payment(String identifier, String method, float amount, Order order) {
+    public Payment(String identifier, PaymentMethod method, float amount, Order order) {
         this.identifier = identifier;
         this.date = LocalDate.now();
         this.method = method;
         this.amount = amount;
-
+        this.order = order;
     }
 
     // getters and setters for identifier attribute
@@ -29,11 +34,11 @@ public class Payment {
 
     // getters and setters for method
 
-    public String getMethod() {
+    public PaymentMethod getMethod() {
         return this.method;
     }
 
-    public void setMethod(String method) {
+    public void setMethod(PaymentMethod method) {
         this.method = method;
     }
 
@@ -65,11 +70,11 @@ public class Payment {
         this.order = order;
     }
 
-    //Methods: 
+    //Methods: Use Case Number 4.
 
     //public boolean CheckPaymentAvailability() {
-
-    //}
+//
+   // }
 
     //public void executePayment() {
         
