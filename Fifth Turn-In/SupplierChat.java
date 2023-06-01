@@ -1,11 +1,11 @@
-public class ContactSupplier {
+public class SupplierChat {
     private Date date;
-    private String supplier;
+    private Supplier supplier;
     private String topic;
 
     // Constructor 
 
-    public ContactSupplier(Date date,String supplier, String topic){
+    public SupplierChat(Date date,Supplier supplier, String topic){
         this.date=date;
         this.supplier=supplier;
         this.topic=topic;
@@ -22,11 +22,11 @@ public class ContactSupplier {
 
     //getter/setter for supplier
 
-    public String getSupplier(){
+    public Supplier getSupplier(){
         return this.supplier;
     }
 
-    public void setSupplier(String supplier){
+    public void setSupplier(Supplier supplier){
         this.supplier=supplier;
     }
 
