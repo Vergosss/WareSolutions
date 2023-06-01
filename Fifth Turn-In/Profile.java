@@ -2,10 +2,8 @@ public class Profile {
     //Class attributes
     private String customerName;
     private String password;
-    private String location;
-
-    //assosiation 
-    private Employee employee;
+    private String location; 
+    private Employee employee;  //assosiation 
 
 
     // Constructor
@@ -57,4 +55,16 @@ public class Profile {
         System.out.println("Password: " + getPassword());
         System.out.println("Location: " + getLocation());
     }
+
+    //Method to check credentials 
+    public boolean checkCredentials(String enteredPassword) {
+        return getPassword().equals(enteredPassword);
+    }
+
+    //Method to change credentials 
+    public void changeCredentials(String newPassword) {
+        setPassword(newPassword);
+        System.out.println("Credentials changed successfully.");
+    }
+
 }
