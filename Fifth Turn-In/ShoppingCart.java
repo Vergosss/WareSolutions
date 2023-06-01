@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class ShoppingCart {
     // Class attributes
     private List<Product> products = new ArrayList<>();
-    private Order order; //insance variable order of type Order (association)
+    private Order order; //instance variable order of type Order (association)
    
     // Constructor
     public ShoppingCart(List<Product> products, Order order) {

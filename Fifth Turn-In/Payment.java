@@ -6,10 +6,10 @@ public class Payment {
     private LocalDate date;
     private String method;
     private float amount;
+    private Order order;
 
     // Constructor
-
-    public Payment(String identifier, String method, float amount) {
+    public Payment(String identifier, String method, float amount, Order order) {
         this.identifier = identifier;
         this.date = LocalDate.now();
         this.method = method;
@@ -55,4 +55,24 @@ public class Payment {
     public void setPaymentDate() {
         this.date = LocalDate.now();
     }
+
+    //getters and setters for order
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
+
+    //Methods: 
+
+    //public boolean CheckPaymentAvailability() {
+
+    //}
+
+    //public void executePayment() {
+        
+    //}
+
 }
