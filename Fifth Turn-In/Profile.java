@@ -63,8 +63,15 @@ public class Profile {
 
     //Method to change credentials 
     public void changeCredentials(String newPassword) {
-        setPassword(newPassword);
-        System.out.println("Credentials changed successfully.");
+        try{
+            if (newPassword.length() < 8) {
+                throw new IllegalArgumentException("New Password Must be at least <8> characters long!!");
+            }
+            setPassword(newPassword);
+            System.out.println("Credentials changed successfully.");
+        } catch(IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 
 }
