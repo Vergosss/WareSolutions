@@ -39,5 +39,7 @@ public class SupplierChat {
     public void setTopic(String topic){
         this.topic=topic;
     }
-
+    public void startConversation(){
+        
+    }
 }
