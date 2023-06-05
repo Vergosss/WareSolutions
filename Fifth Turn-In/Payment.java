@@ -72,12 +72,12 @@ public class Payment {
 
     //Methods: Use Case Number 4.
 
-    //public boolean CheckPaymentAvailability() {
-//
-   // }
+    public boolean CheckPaymentAvailability() {
+        return true;//temporary
+   }
 
-    //public void executePayment() {
+    public void executePayment() {
         
-    //}
+    }
 
 }
