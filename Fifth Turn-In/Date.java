@@ -40,8 +40,11 @@ public class Date {
     }
 
     // Sequence diagram 13 and Use Case 13
-    public void checkDateValidity() {
-
+    public boolean checkDateValidity() {
+        if (year < 0 || month < 1 || month > 12 || day < 1 || day > getMaxDaysInMonth()) {
+            return false;
+        }
+        return true;
     }
 
     // Sequence diagram 13 and Use Case 13
@@ -52,4 +55,19 @@ public class Date {
         System.out.println("Return to home statistics view page.");
     }
 
+    // Private helper method to get the maximum number of days in a month
+    private int getMaxDaysInMonth() {
+        if (month == 2) {
+            return isLeapYear() ? 29 : 28;
+        } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+            return 30;
+        } else {
+            return 31;
+        }
+    }
+
+    // Private helper method to check if it's a leap year
+    private boolean isLeapYear() {
+        return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+    }
 }
