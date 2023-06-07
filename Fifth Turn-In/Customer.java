@@ -1,14 +1,18 @@
+import java.util.Date;
+
 public class Customer extends User {
    // Class attributes
    private String identifier;
    private String name;
    private Profile profile;
+   private Order order;
 
    // Constructor
-   public Customer(String identifier, String name, Profile profile) {
+   public Customer(String identifier, String name, Profile profile, Order order) {
       this.identifier = identifier;
       this.name = name;
       this.profile = profile;
+      this.order = order;
    }
 
    // Getters and Setters
@@ -34,6 +38,14 @@ public class Customer extends User {
 
    public void setProfile(Profile profile) {
       this.profile = profile;
+   }
+
+   public Order getOrder() {
+      return this.order;
+   }
+
+   public void setOrder(Order order) {
+      this.order = order;
    }
 
 //Beginning of methods in Customer class!!
@@ -77,5 +89,16 @@ public class Customer extends User {
           System.out.println("Error: " + e.getMessage());
       }
   }
+  //Method to create Order:
+   public void createOrder(String identifier, Payment payment) {
+      if (profile == null) {
+       System.out.println("No profile found. Please set a profile for the customer.");
+       return;
+      }
+   
+      Date date = new Date(); // Current date and time
+      order = new Order(date, identifier, this, payment); //'this' referes to the current instance of the Customer class.
+      System.out.println("Order created successfully.");
+   }
 
 }
