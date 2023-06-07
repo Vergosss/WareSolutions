@@ -50,6 +50,7 @@ public class Customer extends User {
 
 //Beginning of methods in Customer class!!
    // Method to edit profile
+   /* 
    public void editProfile(String customerName, String password, String location) {
       if (profile != null) {
           profile.setCustomerName(customerName);
@@ -129,5 +130,5 @@ public class Customer extends User {
       System.out.println("Payment Method: " + method);
       System.out.println("Amount: " + amount);
    }
-
+*/
 }
