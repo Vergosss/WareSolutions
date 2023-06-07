@@ -48,5 +48,20 @@ public class Customer extends User {
           System.out.println("No profile found. Please set a profile for the customer.");
       }
   }
-  
+  // Method to add credentials
+  public void addCredentials(String newPassword) {
+   if (profile != null) {
+       try {
+           if (newPassword.length() < 8) {
+               throw new IllegalArgumentException("New Password must be at least 8 characters long!");
+           }
+           profile.setPassword(newPassword);
+           System.out.println("Credentials added successfully.");
+       } catch (IllegalArgumentException e) {
+           System.out.println("Error: " + e.getMessage());
+       }
+   } else {
+       System.out.println("No profile found. Please set a profile for the customer.");
+   }
+}
 }
