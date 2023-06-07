@@ -46,9 +46,10 @@ public class Date {
 
     // Sequence diagram 13 and Use Case 13
     public void deleteDates() {
-
+        day = 0;
+        month = 0;
+        year = 0;
+        System.out.println("Return to home statistics view page.");
     }
-    // end of getters and setters.
-    //
 
 }
