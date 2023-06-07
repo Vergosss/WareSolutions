@@ -101,7 +101,7 @@ public class Customer extends User {
       System.out.println("Order created successfully.");
    }
 
-   //Method to confirm the order()
+   //Method to confirm the order.
    public void confirm() {
       if (order == null) {
           System.out.println("No order found. Please create an order first.");
@@ -120,5 +120,21 @@ public class Customer extends User {
   
       order = null; // Reset the current order after confirmation
   }
+
+  //Method to insertPaymentMethod() 
+   public void insertPaymentMethod(String identifier, Payment.PaymentMethod method, float amount) {
+      if (order == null) {
+       System.out.println("No order found. Please create an order first.");
+       return;
+      }
+
+      Payment payment = new Payment(identifier, method, amount, order);
+      order.setPayment(payment);
+
+      System.out.println("Payment method inserted successfully:");
+      System.out.println("Identifier: " + identifier);
+      System.out.println("Payment Method: " + method);
+      System.out.println("Amount: " + amount);
+}
 
 }
