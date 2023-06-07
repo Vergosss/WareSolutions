@@ -101,4 +101,24 @@ public class Customer extends User {
       System.out.println("Order created successfully.");
    }
 
+   //Method to confirm the order()
+   public void confirm() {
+      if (order == null) {
+          System.out.println("No order found. Please create an order first.");
+          return;
+      }
+  
+      // Perform confirmation logic here
+      System.out.println("Order confirmed. Thank you for your purchase!");
+      System.out.println("Order details:");
+      System.out.println("Date: " + order.getDate());
+      System.out.println("Identifier: " + order.getIdentifier());
+      System.out.println("Customer: " + order.getCustomer().getName());
+      System.out.println("Payment: " + order.getPayment().getMethod());
+  
+      // Additional logic can be added here as needed
+  
+      order = null; // Reset the current order after confirmation
+  }
+
 }
