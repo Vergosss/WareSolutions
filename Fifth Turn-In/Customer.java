@@ -95,7 +95,6 @@ public class Customer extends User {
        System.out.println("No profile found. Please set a profile for the customer.");
        return;
       }
-   
       Date date = new Date(); // Current date and time
       order = new Order(date, identifier, this, payment); //'this' referes to the current instance of the Customer class.
       System.out.println("Order created successfully.");
@@ -107,17 +106,12 @@ public class Customer extends User {
           System.out.println("No order found. Please create an order first.");
           return;
       }
-  
-      // Perform confirmation logic here
       System.out.println("Order confirmed. Thank you for your purchase!");
       System.out.println("Order details:");
       System.out.println("Date: " + order.getDate());
       System.out.println("Identifier: " + order.getIdentifier());
       System.out.println("Customer: " + order.getCustomer().getName());
       System.out.println("Payment: " + order.getPayment().getMethod());
-  
-      // Additional logic can be added here as needed
-  
       order = null; // Reset the current order after confirmation
   }
 
@@ -127,7 +121,6 @@ public class Customer extends User {
        System.out.println("No order found. Please create an order first.");
        return;
       }
-
       Payment payment = new Payment(identifier, method, amount, order);
       order.setPayment(payment);
 
@@ -135,6 +128,6 @@ public class Customer extends User {
       System.out.println("Identifier: " + identifier);
       System.out.println("Payment Method: " + method);
       System.out.println("Amount: " + amount);
-}
+   }
 
 }
