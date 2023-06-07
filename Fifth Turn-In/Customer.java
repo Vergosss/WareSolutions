@@ -60,8 +60,22 @@ public class Customer extends User {
        } catch (IllegalArgumentException e) {
            System.out.println("Error: " + e.getMessage());
        }
-   } else {
+    } else {
        System.out.println("No profile found. Please set a profile for the customer.");
+    }
    }
-}
+
+   // Method to change credentials: 
+   public void changeCredentials(String newPassword) {
+      try{
+          if (newPassword.length() < 8) {
+              throw new IllegalArgumentException("New Password Must be at least <8> characters long!!");
+          }
+          profile.setPassword(newPassword);
+          System.out.println("Credentials changed successfully.");
+      } catch(IllegalArgumentException e) {
+          System.out.println("Error: " + e.getMessage());
+      }
+  }
+
 }
