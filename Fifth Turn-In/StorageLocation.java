@@ -52,7 +52,9 @@ public class StorageLocation {
 
     //Third Method: deleteLocation(Product product).
     public void deleteLocation(Product product){
-
+        this.aisle = -1;//-1 means undefined so Deleted
+        this.shelf = -1;//same
+        this.warehouse = null;//setting attributes to undefined values to imply location deletion.
     }
     public void informUserAboutOptimalLocation(){
         
