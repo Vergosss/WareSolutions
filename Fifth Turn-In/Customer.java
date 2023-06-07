@@ -25,5 +25,5 @@ public class Customer extends User {
    public void setName(String name) {
       this.name = name;
    }
-
+//
 }
