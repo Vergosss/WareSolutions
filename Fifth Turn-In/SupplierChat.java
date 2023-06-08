@@ -40,7 +40,13 @@ public class SupplierChat {
         this.topic=topic;
     }
     
-    public void startConversation(){
-        
+    public void startConversation() {
+        String supplierIdentifier = supplier.getIdentifier();
+        String supplierBrand = supplier.getBrand();
+    
+        System.out.println("Conversation started with supplier: " + supplierBrand + " (ID: " + supplierIdentifier + ")");
+        System.out.println("Date: " + date);
+        System.out.println("Topic: " + topic);
+
     }
 }
