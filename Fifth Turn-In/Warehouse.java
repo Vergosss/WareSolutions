@@ -81,4 +81,7 @@ public class Warehouse {
     public void changeWareHousePriority(){
 
     }
+    public void checkWarehouseRequirements(){
+        //method to check warehouse requirements- use case 15
+    }
 }
