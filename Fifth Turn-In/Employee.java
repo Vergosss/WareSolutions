@@ -42,4 +42,7 @@ public class Employee {
         System.out.println("Name: " + getName());
         System.out.println("Department: " + getDepartment());
     }
+    public void informWarehouse(Warehouse warehouse){
+        //informWarehouse method of our class diagram-Use case 15
+    }
 }
